@@ -138,7 +138,6 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: red;
   padding: 0;
 }
 
@@ -146,7 +145,7 @@ a {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
   max-width: 555px;
-  min-height: 320px;
+  min-height: 360px;
 }
 /*
 ===============================================
@@ -532,6 +531,7 @@ a {
 
 .hero-section .input-wrap{
   width: 100%;
+  
 }
 .hero-section .number label {
   font-size: 13px;
@@ -556,8 +556,18 @@ a {
   width: calc(100% - 10px);
 }
 
+.hero-section .number{
+  /* width: 300px; */
+}
+.hero-section .number button{
+  width: 250px;
+}
 .hero-section .number .radio {
   margin-top: 20px;
+}
+
+.hero-section .number {
+  width: 100%;
 }
 
 .hero-section .size {
@@ -580,15 +590,15 @@ a {
 .hero-section .size .radio {
   margin-top: 20px;
 }
-
+.hero-section .size {
+  height: 40px;
+}
 @media (max-width: 991px) {
   .hero-section .input-wrap {
     width: 100%;
   }
 
-  .hero-section .number {
-    border-bottom: 1px solid var(--white);
-  }
+  
   .hero-section .size {
     border-left: 0px solid var(--white);
     padding: 20px 0;
@@ -612,15 +622,21 @@ a {
 .hero-section form input,
 .hero-section form select{
   background-color: var(--white);
-  border-radius: 0;
+  border-radius: 4px;
   outline: none;
   border: 1px solid var(--grey);
   height: 40px;
   /* padding: 15px; */
   font-size: 14px;
   color: var(--light-black);
-}
 
+}
+.hero-section form button.main-btn,
+.hero-section form button.m-btn,
+.hero-section form button{
+  border-radius: 4px;
+  /* height: 40px !important; */
+}
 /* 
 ===============================================
     HERO SECTION END 
