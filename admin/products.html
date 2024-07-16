@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- FONTAWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- BOOTSTRAP 5 CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+
+    <!-- OWL CAROUSEL  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="main">
+            <aside class="side-bar" id="sideBar">
+
+                <button class="side-close d-lg-none" id="sideCloseBtn"><i
+                        class="fa-regular fa-circle-xmark"></i></button>
+
+                <div class="logo">
+                    <!-- <img src="" alt=""> -->
+                    <h4 class="text-center text-white">Admin</h4>
+                </div>
+                <div class="navs">
+                    <ul>
+                        <li>
+                            <a class="" href="dashboard.html"><i class="fa-solid fa-table-cells"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a class="active"  href="products.html"><i class="fa-solid fa-box-archive"></i> Products</a>
+                        </li>
+                        <li>
+                            <a href="manufacturers.html"><i class="fa-solid fa-list"></i>
+                                Manufacturers</a>
+                        </li>
+                        <li>
+                            <a class="" href="tyre-patteren.html"><i class="fa-solid fa-sliders"></i> Tyre Patteren</a>
+                        </li>
+                        <li>
+                            <a  href="users.html"><i class="fa-solid fa-users"></i> All users</a>
+                        </li>
+                        <li>
+                            <a  href="orders.html"><i class="fa-solid fa-cart-flatbed"></i> Orders</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="logout" href="../php/logout.html"><i class="fa-solid fa-right-from-bracket"></i> log Out</a>
+
+            </aside>
+
+            <script>
+
+            </script>
+            <div class="main-wrap" id="mainArea">
+                <div class="top-bar d-flex w-100">
+                    <button class="sidebar-toggler" id="sideToggler">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <h4 class="m-0">Dashboard</h4>
+
+                    <div class="right-top dropwdown ms-auto">
+                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Admin</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <a href="#" class="dropdown-item">Profile</a>
+                            <a href="../php/logout.html" class="dropdown-item">Logout</a>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="content-area mt-5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="m-0">Products</h5>
+
+                        <a href="add-product.html">Add Product</a>
+
+                    </div>
+
+                    <p class="text-danger"></p>
+                    <p class="text-success"></p>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Tyre Name</th>
+                                    <th>Image</th>
+                                    <th>Manufac. Name</th>
+                                    <th>Tyre Patteren</th>
+                                    <th>fuel Effic.</th>
+                                    <th>Wet Grip</th>
+                                    <th>Road Noise</th>
+                                    <th>Size</th>
+                                    <th>Type</th>
+                                    <th>Season</th>
+                                    <th>Budget tyre</th>
+                                    <th>Price</th>
+                                    <th>Actions</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>ECONO DRIVE</td>
+                                    <td>Image</td>
+                                    <td>Dunlop</td>
+                                    <td>ECONO DRIVE</td>
+                                    <td>B</td>
+                                    <td>B</td>
+                                    <td>72</td>
+                                    <td>225/55 R17 109/107H</td>
+                                    <td>car</td>
+                                    <td>
+                                        Summer </td>
+                                    <td>Yes</td>
+                                    <td>127.05</td>
+                                    <td>
+                                        <a href="edit-product.html?id=1" class="btn btn-sm btn-info"><i
+                                                class="fa-solid fa-pen"></i></a>
+                                        <a href="php/delete-product.html?id=1" class="btn btn-sm btn-danger"><i
+                                                class="fa-solid fa-trash-can"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> FASTRESPONSE</td>
+                                    <td>Image</td>
+                                    <td>Dunlop</td>
+                                    <td>FASTRESPONSE</td>
+                                    <td>B</td>
+                                    <td>B</td>
+                                    <td>72</td>
+                                    <td>225/55 R17 109/107H</td>
+                                    <td>car</td>
+                                    <td>
+                                        Summer </td>
+                                    <td>Yes</td>
+                                    <td>57.05</td>
+                                    <td>
+                                        <a href="edit-product.html?id=2" class="btn btn-sm btn-info"><i
+                                                class="fa-solid fa-pen"></i></a>
+                                        <a href="php/delete-product.html?id=2" class="btn btn-sm btn-danger"><i
+                                                class="fa-solid fa-trash-can"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>AC808</td>
+                                    <td>Image</td>
+                                    <td>Anchee</td>
+                                    <td>AC808</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>71</td>
+                                    <td>195/60 R15 88H</td>
+                                    <td>Car</td>
+                                    <td>
+                                        Winter </td>
+                                    <td>No</td>
+                                    <td>51.75</td>
+                                    <td>
+                                        <a href="edit-product.html?id=5" class="btn btn-sm btn-info"><i
+                                                class="fa-solid fa-pen"></i></a>
+                                        <a href="php/delete-product.html?id=5" class="btn btn-sm btn-danger"><i
+                                                class="fa-solid fa-trash-can"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jamal Khan</td>
+                                    <td>Image</td>
+                                    <td>Dunlop</td>
+                                    <td>ECONO DRIVE</td>
+                                    <td>C</td>
+                                    <td>D</td>
+                                    <td>72</td>
+                                    <td>265/65 R17 112S</td>
+                                    <td>Car</td>
+                                    <td>
+                                        All Season </td>
+                                    <td>Yes</td>
+                                    <td>28500</td>
+                                    <td>
+                                        <a href="edit-product.html?id=6" class="btn btn-sm btn-info"><i
+                                                class="fa-solid fa-pen"></i></a>
+                                        <a href="php/delete-product.html?id=6" class="btn btn-sm btn-danger"><i
+                                                class="fa-solid fa-trash-can"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Note 10 Pro</td>
+                                    <td>Image</td>
+                                    <td>Dunlop</td>
+                                    <td>ECONO DRIVE</td>
+                                    <td>C</td>
+                                    <td>B</td>
+                                    <td>70</td>
+                                    <td>225/45 R17 94Y</td>
+                                    <td>Car</td>
+                                    <td>
+                                        Summer </td>
+                                    <td>Yes</td>
+                                    <td>40000</td>
+                                    <td>
+                                        <a href="edit-product.html?id=7" class="btn btn-sm btn-info"><i
+                                                class="fa-solid fa-pen"></i></a>
+                                        <a href="php/delete-product.html?id=7" class="btn btn-sm btn-danger"><i
+                                                class="fa-solid fa-trash-can"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JQUERY  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- BOOTSTRAP 5 JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+        let sideBar = document.getElementById("sideBar");
+        let sideToggler = document.getElementById("sideToggler");
+        let mainArea = document.getElementById("mainArea");
+        let closeBtn = document.getElementById("sideCloseBtn");
+
+        sideToggler.addEventListener("click", function (e) {
+            sideBar.classList.toggle("none")
+            mainArea.classList.toggle("side-none")
+        })
+
+        closeBtn.addEventListener("click", function (e) {
+            sideBar.classList.remove("none")
+            mainArea.classList.remove("side-none")
+        })
+
+    </script>
+
+</body>
+
+</html>
