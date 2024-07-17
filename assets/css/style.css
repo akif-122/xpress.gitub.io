@@ -148,6 +148,96 @@ a {
   min-height: 360px;
   backdrop-filter: blur(3px);
 }
+
+.side-cart{
+  width: 350px;
+  height: 100vh;
+  padding: 10px 15px;
+  position: fixed;
+  background-color: var(--white);
+  right: 0;
+  transform: translateX(100%);
+  top: 0;
+  z-index: 10000;
+  transition: .5s ease;
+  
+}
+.side-cart.show{
+  transform: translateX(0%);
+}
+.side-cart .side-card-header {
+  border-bottom: 1px solid var(--grey);
+  margin-bottom: 30px;
+}
+.side-cart .cart-btns{
+  border-top: 1px solid var(--grey);
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  padding-top: 8px;
+}
+.side-cart .cart{
+  height: 70vh;
+  overflow-y: auto;
+}
+.side-cart .cart-item{
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--grey);
+}
+.side-cart .cart-close{
+  all: unset;
+  font-size: 30px;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+.side-cart .item-detail{
+  padding-left: 14px;
+}
+.side-cart .item-detail p.title{
+  margin-bottom: 10px;
+}
+.side-cart .item-detail p.price{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.side-cart .remove-icon{
+  color: var(--primary-blue);
+}
+.side-cart .qty-wrap input{
+  all: unset;
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.side-cart .qty-wrap button{
+  all: unset;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  color: var(--light-black);
+  background-color: var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease;
+  cursor: pointer;
+}
+.side-cart .qty-wrap button:hover{
+  color: var(--white);
+  background-color: var(--primary-blue);
+}
+
+@media (max-width: 425px){
+.side-cart{
+  width: 100%;
+}
+}
+
 /*
 ===============================================
     TOP BAR SECTION START
@@ -2478,8 +2568,38 @@ HERO BANNER SECTION START
 .cart-page {
   margin: 50px auto;
 }
+.cart-page table thead tr td{
+  color: var(--white);
+  background-color: var(--primary-blue);
+  white-space: nowrap;
+}
 .cart-page table tr td {
   vertical-align: middle;
+}
+
+.cart-page .quantity button{
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-page .quantity input{
+  width: 60px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  outline: none;
+}
+.cart-page .remove{
+  all: unset;
+  cursor: pointer;
+  color: var(--primary-blue);
+  margin: auto;
+  display: block;
 }
 
 /* ====================================    CART PAGE    ====================================== */

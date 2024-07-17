@@ -50,6 +50,97 @@
                 </section>
                 <!-- TOP BAR SECTION END -->
 
+                <!-- SIDE CART -->
+                <div class="side-cart" id="side-cart">
+
+
+                    <div class="side-card-header  d-flex align-items-center justify-content-between">
+                        <button class="cart-close" id="cart-close"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <h5 class="m-0">Your Cart</h5>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+
+                    <div class="cart border-0">
+                        <div class="cart-item d-flex ">
+                            <div class="img">
+                                <img src="assets/imgs/tyres/econodrive.jpg" width="40px" alt="">
+                            </div>
+                            <div class="item-detail">
+                                <p class="title">Summer Tyre Dunlop ECONO DRIVE 225/55</p>
+                               
+                                <div class="d-flex  align-items-center justify-content-between">
+                                    <div class="qty-wrap d-flex align-items-center">
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <input type="text" min="1" value="1">
+                                        <button><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <p class=" price">£ 127.05</p>
+                                </div>
+                                
+                            </div>
+                            <a href="#" class="ms-auto remove-icon"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+
+                        <div class="cart-item d-flex ">
+                            <div class="img">
+                                <img src="assets/imgs/tyres/econodrive.jpg" width="40px" alt="">
+                            </div>
+                            <div class="item-detail">
+                                <p class="title">Summer Tyre Dunlop ECONO DRIVE 225/55</p>
+                               
+                                <div class="d-flex  align-items-center justify-content-between">
+                                    <div class="qty-wrap d-flex align-items-center">
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <input type="text" min="1" value="1">
+                                        <button><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <p class=" price">£ 127.05</p>
+                                </div>
+                                
+                            </div>
+                            <a href="#" class="ms-auto remove-icon"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+
+                        <div class="cart-item d-flex ">
+                            <div class="img">
+                                <img src="assets/imgs/tyres/econodrive.jpg" width="40px" alt="">
+                            </div>
+                            <div class="item-detail">
+                                <p class="title">Summer Tyre Dunlop ECONO DRIVE 225/55</p>
+                               
+                                <div class="d-flex  align-items-center justify-content-between">
+                                    <div class="qty-wrap d-flex align-items-center">
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <input type="text" min="1" value="1">
+                                        <button><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <p class=" price">£ 127.05</p>
+                                </div>
+                                
+                            </div>
+                            <a href="#" class="ms-auto remove-icon"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        
+                       
+
+
+                        
+                    </div>
+
+                    <div class="cart-btns">
+                        <div class="text-end ">
+                            <h6 class="mb-3">Total <strong>£127.05</strong></h6>
+                        </div>
+                        <div class=" d-flex justify-content-between">
+                            <a href="cart.html" class="main-btn">View Cart</a>
+                            <a href="checkout.html" class="main-btn">Checkout</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- SIDE END -->
+
 
                 <!-- NAVBAR SECTION START -->
                 <nav class="navbar navbar-dark navbar-expand-lg main-nav p-0 ">
@@ -158,39 +249,15 @@
 
 
                             <div
-                                class="h-icon-box cart-box d-flex flex-column justify-content-center align-items-end align-items-sm-center dropdown">
-                                <a href="#" class="text-white" data-bs-toggle="dropdown">
-                                    <div class="icon">
+                                class="h-icon-box cart-box d-flex flex-column justify-content-center align-items-end align-items-sm-center ">
+                                <a href="#" class="text-white">
+                                    <div class="icon" id="side-cart-toggler">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                         <span id="count">0</span>
                                     </div>
                                 </a>
 
-                                <div class="dropdown-menu cart-dropdown dropdown-menu-end">
-                                    <div class="cart border-0">
-                                        <div class="cart-item d-flex align-items-center">
-                                            <div class="img">
-                                                <img src="assets/imgs/tyres/econodrive.jpg" width="40px" alt="">
-                                            </div>
-                                            <p class="title">Summer Tyre Dunlop ECONO DRIVE 225/55</p>
-                                            <p class="mx-auto">x 1</p>
-                                            <p class="mx-auto">£127.05</p>
-                                            <a href="#" class="ms-auto"><i class="fa-solid fa-xmark"></i></a>
-                                        </div>
-
-                                        <div class="text-end mt-3">
-                                            <p class="mb-2">Sub-Total <strong>£127.05</strong></p>
-                                            <p class="mb-2">Total <strong>£127.05</strong></p>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="d-flex flex-wrap align-items-center justify-content-between cart-btm-btns">
-                                        <a href="cart.html" class="view-btn">View Cart</a>
-                                        <a href="booking.html" class="main-btn">Proceed To Booking</a>
-                                    </div>
-
-                                </div>
+                               
                             </div>
 
                         </div>
@@ -323,7 +390,8 @@
                                             <div class="number">
                                                 <h4>Enter your registration</h4>
 
-                                                <div class=" d-flex flex-column gap-2 flex-sm-row align-items-stretch mt-4">
+                                                <div
+                                                    class=" d-flex flex-column gap-2 flex-sm-row align-items-stretch mt-4">
                                                     <div class="input-wrap">
                                                         <input type="text" placeholder="VEHICLE REG.NO.">
                                                     </div>
@@ -1642,6 +1710,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 
     <script>
+
+
+        // SIDE CART TOGGLE
+        let sideCartToggler = document.getElementById("side-cart-toggler");
+        let sideCart = document.getElementById("side-cart");
+        let cartClose = document.getElementById("cart-close");
+
+        sideCartToggler.addEventListener("click", ()=>{
+            sideCart.classList.toggle("show");
+        });
+
+        sideCart.addEventListener("click", ()=>{
+            sideCart.classList.add("show");
+        },true);
+
+        cartClose.addEventListener("click", ()=>{
+            sideCart.classList.remove("show");
+        });
+        document.addEventListener("click", (e)=>{
+            sideCart.classList.remove("show");
+        }, true)
+
+
+        
         // main image slider
         $('#main-slider-1').owlCarousel({
             loop: true,
