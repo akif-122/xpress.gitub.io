@@ -247,8 +247,9 @@ a {
   background-color: var(--light-black);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding: 5px 15px;
-  padding-bottom: 8px;
   min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .top-bar ul li a {
@@ -1379,6 +1380,20 @@ a {
 .footer ul li a:hover {
   text-decoration: underline;
 }
+
+.footer .social-icon {
+  display: flex; 
+  gap: 10px;
+}
+
+.footer .social-icon li a:hover{
+  color: var(--primary-blue);
+}
+.footer .social-icon li a i{
+  font-size: 20px;
+}
+
+
 .footer .footer-bottom img {
   width: 50px;
   height: 25px;
@@ -2254,6 +2269,44 @@ HERO BANNER SECTION START
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+.checkout .checkout-form .igt-btn{
+  color: var(--white);
+  background-color: var(--full-black);
+  border: 1px solid var(--full-black);
+  transition: .5s ease;
+}
+.checkout .checkout-form .igt-btn:hover{
+  color: var(--full-black);
+  background-color: var(--grey);
+}
+
+
+
+.checkout .qty-wrap input{
+  all: unset;
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.checkout .qty-wrap button{
+  all: unset;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  color: var(--light-black);
+  background-color: var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease;
+  cursor: pointer;
+}
+.checkout .qty-wrap button:hover{
+  color: var(--white);
+  background-color: var(--primary-blue);
+}
+
 
 .checkout .appointment-detail {
   margin: 25px 0;
