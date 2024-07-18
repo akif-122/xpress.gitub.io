@@ -9,7 +9,8 @@
 ================================================
 */
 .user-dashboard .side-bar{
-    background-color: var(--dark-blue);
+    background-color: var(--light-black);
+    /* border-top: 1px solid var(--grey); */
     height: 100%;
     padding: 20px;
     max-width: 300px;
@@ -25,7 +26,7 @@
 .user-dashboard .side-bar h3{
     font-size: 20px;
     text-align: center;
-    border-bottom: 1px solid #0081c2;
+    border-bottom: 1px solid var(--grey);
     color: var(--white);
     padding-bottom: 15px;
 }
@@ -83,6 +84,10 @@
         border-radius: 5px;
     }
 
+    .user-main .form-wrap{
+        border: 1px solid #c1c1c1c9;
+    }
+
 }
 
 
@@ -92,7 +97,7 @@
 ================================================
 */
 .content-area table thead tr th{
-    background-color: var(--dark-blue);
+    background-color: var(--light-black);
     color: var(--white);
-    border-color: var(--dark-blue);
+    border-color: var(--light-black);
   }

@@ -1714,29 +1714,8 @@
 
     <!-- BOOTSTRAP 5 JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-
+    <script src="assets/js/app.js"></script>
     <script>
-
-
-        // SIDE CART TOGGLE
-        let sideCartToggler = document.getElementById("side-cart-toggler");
-        let sideCart = document.getElementById("side-cart");
-        let cartClose = document.getElementById("cart-close");
-
-        sideCartToggler.addEventListener("click", ()=>{
-            sideCart.classList.toggle("show");
-        });
-
-        sideCart.addEventListener("click", ()=>{
-            sideCart.classList.add("show");
-        },true);
-
-        cartClose.addEventListener("click", ()=>{
-            sideCart.classList.remove("show");
-        });
-        document.addEventListener("click", (e)=>{
-            sideCart.classList.remove("show");
-        }, true)
 
 
         
