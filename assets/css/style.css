@@ -10,7 +10,7 @@
   --full-black: #000;
   --light-black: #1c1c18;
   --white: #fff;
-  --primary-blue: #ee314f;
+  --primary-blue: #fdac04;
   --dark-blue: #0158a7;
   --yellow: #edda0c;
   --orange: #f2641b;
@@ -37,6 +37,21 @@ span,
 label,
 html {
   font-family: "Poppins", sans-serif !important;
+}
+
+.overlay{
+  position: relative;
+  isolation: isolate;
+}
+.overlay:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
 }
 
 h1 {
@@ -112,7 +127,7 @@ a {
   font-weight: 600;
   padding: 5px 25px;
   text-transform: uppercase;
-  border-radius: 0px;
+  border-radius: 4px;
   font-size: 16px;
   transition: 0.5s ease;
 }
@@ -364,7 +379,7 @@ a {
   position: relative;
 }
 .header .h-icon-box.cart-box .icon span {
-  color: var(--white);
+  color: var(--light-black);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -376,7 +391,7 @@ a {
 }
 .header .h-icon-box.cart-box .icon i {
   font-size: 18px;
-  color: var(--white);
+  color: var(--light-black);
 }
 
 .cart-dropdown {
@@ -441,9 +456,10 @@ a {
 ===============================================
 */
 .main-nav {
-  background-color: var(--primary-blue);
+  background-color: var(--white);
   position: relative;
   height: 60px;
+  box-shadow: 0 0 20px -10px grey;
 }
 
 .main-nav .logo img {
@@ -461,7 +477,7 @@ a {
   z-index: 1000;
 }
 .main-nav ul {
-  background-color: var(--primary-blue);
+  background-color: var(--white);
   margin: 0;
   padding: 0;
   z-index: 100;
@@ -474,7 +490,7 @@ a {
 .main-nav ul li > a {
   font-size: 13px;
   font-weight: 600;
-  color: var(--white);
+  color: var(--light-black);
   text-transform: uppercase;
   padding: 20px 20px;
   display: inline-block;
@@ -502,15 +518,16 @@ a {
 
 .main-nav .navbar-toggle {
   all: unset;
-  color: var(--white);
+  color: var(--light-black);
   cursor: pointer;
   margin-left: 10px;
-  border: 1px solid var(--white);
+  border: 1px solid var(--light-black);
   padding: 0px 8px;
   border-radius: 4px;
   font-size: 18px;
 }
-@media (min-width: 992px) {
+@media (min-width: 991px) {
+ 
   .main-nav .mega-dropdown-menu {
     display: block;
     opacity: 0;
@@ -535,10 +552,50 @@ a {
 }
 
 @media (max-width: 991px) {
+  #myNav{
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 300px;
+    height: 100vw;
+    z-index: 10000;
+    background-color: var(--white);
+    padding-top: 20px;
+    box-shadow: 0 0 30px -20px grey;
+    transition: .4s ease;
+  }
+  #myNav.active{
+    left: 0;
+  }
+  #myNav .navClose{
+    all: unset;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--dark-orange);
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+  }
+  #myNav .navbar-nav{
+    padding-right: 0px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 20px;
+    padding-top: 0 !important;
+
+  }
   .main-nav ul li > a {
     padding: 15px 16px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+  }
+  .main-nav ul li > a.navbar-nav.show{
+    color: var(--white);
   }
   .main-nav .mega-dropdown-menu {
     background-color: var(--white);
@@ -550,6 +607,7 @@ a {
     color: var(--full-black);
   }
   .main-nav ul li a.show {
+    color: var(--white);
     background-color: var(--full-black);
   }
 }
@@ -1066,12 +1124,22 @@ a {
 .main-img-slider {
   position: relative;
 }
+.main-img-slider{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-img-slider img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .main-img-slider .owl-dots {
   position: absolute;
   z-index: 100;
   bottom: 0px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
 }
 .main-img-slider .owl-dots button {
   background-color: transparent !important;
@@ -1110,6 +1178,7 @@ a {
 */
 .brands {
   padding: 40px 80px;
+  margin-bottom: 70px;
 }
 .brands .brand-img {
   width: 100%;
@@ -1460,14 +1529,14 @@ HERO BANNER SECTION START
 }
 .man-search .search-wrap select {
   height: 45px;
-  border-radius: 0;
+  /* border-radius: 0; */
 }
 .man-search .search-wrap input {
-  border-radius: 0;
+  /* border-radius: 0; */
 }
 .search-wrap button.search-btn,
 .search-wrap button.main-btn {
-  border-radius: 0 !important;
+  /* border-radius: 0 !important; */
 }
 .man-search .search-wrap h3 {
   font-size: 17px;
@@ -2637,6 +2706,7 @@ HERO BANNER SECTION START
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0;
 }
 .cart-page .quantity input{
   width: 60px;

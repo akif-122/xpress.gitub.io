@@ -1,4 +1,21 @@
 
+    // MOBILE NAVBAR TOGGLER
+    let navToggler = document.getElementById("navToggler");
+    let navClose = document.getElementById("navClose");
+    let nav = document.getElementById("myNav");
+
+    navToggler.addEventListener("click", ()=>{
+        nav.classList.toggle("active")
+    })
+
+    nav.addEventListener("click", ()=>{
+        nav.classList.add("active")
+    },true)
+    navClose.addEventListener("click", ()=>{
+        nav.classList.remove("active")
+    })
+
+
 
         // SIDE CART TOGGLE
         let sideCartToggler = document.getElementById("side-cart-toggler");
@@ -7,7 +24,7 @@
 
         sideCartToggler.addEventListener("click", ()=>{
             sideCart.classList.toggle("show");
-        });
+        },true);
 
         sideCart.addEventListener("click", ()=>{
             sideCart.classList.add("show");
@@ -18,6 +35,8 @@
         });
         document.addEventListener("click", (e)=>{
             sideCart.classList.remove("show");
+        nav.classList.remove("active")
+
         }, true)
 
 
