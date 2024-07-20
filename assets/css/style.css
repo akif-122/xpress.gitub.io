@@ -162,6 +162,7 @@ a {
   max-width: 555px;
   min-height: 360px;
   backdrop-filter: blur(3px);
+  border-radius: 5px;
 }
 
 .side-cart{
@@ -844,6 +845,10 @@ a {
   margin: auto;
   margin-top: 30px;
 }
+.steps .step-card .step-img i{
+  font-size: 60px;
+  transform: translateY(50px);
+}
 .steps .step-card .step-img img {
   width: 100%;
   height: 100%;
@@ -902,8 +907,9 @@ a {
   overflow: hidden;
   margin-right: 10px;
   padding: 5px;
-  /* border-radius: 2px; */
+  border-radius: 4px;
   background-color: var(--primary-blue);
+
 }
 .services .service-card .icon img {
   width: 100%;
@@ -969,6 +975,103 @@ a {
 /* 
 ===============================================
     SERVICES SECTION END 
+===============================================
+*/
+
+/* 
+===============================================
+    ORDER STEP SECTION 
+===============================================
+*/
+.order-step{
+  background-color: var(--white);
+}
+.order-step .order-step-card{
+  background-color: var(--white);
+  box-shadow: 0 0 60px -40px grey;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  padding-left: 140px;
+  position: relative;
+  border-radius: 5px;
+  height: 100%;
+}
+.order-step .order-step-card .o-step-count{
+  background-color: var(--primary-blue);
+  box-shadow: inset 5px 5px 20px -15px grey;
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} 
+.order-step .order-step-card .o-step-count h4{
+  margin-bottom: 0;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 26px;
+}
+.order-step .order-step-card .o-step-count .icon-box{
+  background-color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px -10px grey;
+
+}
+.order-step .order-step-card .o-step-count .icon-box i{
+  font-size: 20px;
+  color: var(--primary-blue);
+}
+.order-step .order-step-card .o-step-text h5{
+  font-size: 16px;
+  color: var(--primary-blue);
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 575px){
+  
+.order-step .order-step-card{
+  background-color: var(--white);
+  box-shadow: 0 0 60px -40px grey;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  padding-left: 90px;
+  position: relative;
+  border-radius: 5px;
+  height: 100%;
+}
+.order-step .order-step-card .o-step-count{
+  background-color: var(--primary-blue);
+  box-shadow: inset 5px 5px 20px -15px grey;
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} 
+}
+
+
+/* 
+===============================================
+ORDER STEP SECTION END 
 ===============================================
 */
 
@@ -1115,6 +1218,60 @@ a {
     CONTACT SECTION  END
 ===============================================
 */
+
+/* 
+===============================================
+    WHY CHOOSE US START
+===============================================
+*/
+.why-choose{
+  background-color: var(--primary-blue);
+  padding: 60px 0;
+  margin: 70px 0;
+}
+.why-choose h2{
+  color: var(--light-black);
+  margin-bottom: 60px;
+}
+
+.why-choose .why-card{
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.why-choose .why-card .why-icon{
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+  width: 80px;
+  height: 80px;
+  border: 7px solid var(--primary-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why-choose .why-card .why-icon svg{
+  width: 40px;
+  height: 40px;
+  fill: var(--primary-blue);
+}
+.why-choose .why-card p{
+  margin-bottom: 0;
+  text-align: justify;
+}
+/* 
+===============================================
+    WHY CHOOSE US END
+===============================================
+*/
+
+
 
 /* 
 ===============================================
