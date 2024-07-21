@@ -1293,7 +1293,6 @@ ORDER STEP SECTION END
   width: 100%;
   height: 800px;
   overflow: hidden;
-  background-color: red;
 }
 .main-img-slider .slide-img img{
   width: 100% !important;
