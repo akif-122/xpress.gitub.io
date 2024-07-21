@@ -627,6 +627,7 @@ a {
 ===============================================
 */
 .hero-section {
+  width: 100%;
   padding: 100px 10px 140px;
   display: flex;
   align-items: center;
