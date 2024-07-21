@@ -900,7 +900,8 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 0;
-  margin: 50px 0;
+  margin-top: 50px;
+
 }
 
 .services .service-card .icon {
@@ -986,7 +987,11 @@ a {
 ===============================================
 */
 .order-step{
-  background-color: var(--white);
+  background-color: var(--light-grey);
+  padding: 50px 0;
+}
+.order-step h2{
+  margin-bottom: 40px;
 }
 .order-step .order-step-card{
   background-color: var(--white);
