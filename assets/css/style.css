@@ -1221,6 +1221,11 @@ ORDER STEP SECTION END
   margin-bottom: 0;
   font-size: 14px;
 }
+@media (max-width: 991px){
+  .home-contact-section .contact-context {
+    border-right: none;
+  }
+}
 /* 
 ===============================================
     CONTACT SECTION  END
