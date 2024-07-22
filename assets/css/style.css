@@ -160,13 +160,15 @@ a {
 
 .main-hero .tab-wrap {
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 20px;
+  padding: 50px;
   max-width: 555px;
-  min-height: 360px;
   backdrop-filter: blur(3px);
   border-radius: 5px;
 }
-
+.main-hero .tab-wrap .number,
+.main-hero .tab-wrap .size{
+  padding-bottom: 0;
+}
 .side-cart{
   width: 350px;
   height: 100vh;
@@ -820,7 +822,7 @@ a {
 ===============================================
 */
 .steps {
-  margin: 30px 0;
+  margin: 50px 0;
 }
 .steps .step-card {
   position: relative;
@@ -901,7 +903,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 0;
-  margin-top: 50px;
 
 }
 
@@ -931,6 +932,7 @@ a {
   opacity: 0.8;
   margin-top: 5px;
   font-weight: 300;
+  margin-bottom: 0;
 }
 
 /* .services .service-card {
@@ -1245,6 +1247,7 @@ ORDER STEP SECTION END
 .why-choose h2{
   color: var(--light-black);
   margin-bottom: 60px;
+  margin-top: 0;
 }
 
 .why-choose .why-card{
